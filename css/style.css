@@ -1,0 +1,257 @@
+body{
+	background-image: url(../img/bg.jpg);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+	border-radius: 20px;
+	width: 600px;
+	margin: auto;
+}
+
+.title h1{
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn{
+	text-transform: uppercase;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: #00ab0c;
+	border: none;
+	margin: 14px;
+}
+
+.btn:hover{
+	background-color: #00de10;
+}
+
+.score{
+	display: inline-block;
+	margin : 0;
+}
+
+.time{
+	position: absolute;
+	font-size: 25px;
+}
+
+.square{
+	width: 605px;
+	height: 400px;
+	border-radius: 5px;
+	margin: auto;
+	cursor: url(../img/weapon1.png), auto;
+}
+
+.square:active{
+	cursor: url(../img/weapon2.png), auto;
+}
+
+.cliff{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.cliff:after{
+	content: '';
+	display: block;
+	width: 200px;
+	height: 100px;
+	background: url(../img/cliff.png) bottom center no-repeat;
+	background-size: 90%;
+	position: absolute;
+	bottom: -22px;
+	border-bottom-right-radius: 80px;
+	border-bottom-left-radius: 90px;
+}
+
+.monster{
+	width: 100%;
+	height: 100%;
+	background: url(../img/monster-idle.png) bottom center no-repeat;
+	background-size: 120%;
+	position: absolute;
+	top: 140px;
+	left: 5px;
+	transition: top .3s;
+}
+
+.monster-damage{
+	width: 100%;
+	height: 100%;
+	background: url(../img/monster-damage.png) bottom center no-repeat;
+	background-size: 120%;
+	position: absolute;
+	top: 140px;
+	left: 5px;
+	transition: top .3s;
+}
+
+.wolf{
+	width: 100%;
+	height: 100%;
+	background: url(../img/wolf-idle.png) bottom center no-repeat;
+	background-size: 145%;
+	position: absolute;
+	top: 140px;
+	left: -3px;
+	transition: top .3s;
+}
+
+.wolf-damage{
+	width: 100%;
+	height: 100%;
+	background: url(../img/wolf-damage.png) bottom center no-repeat;
+	background-size: 145%;
+	position: absolute;
+	top: 140px;
+	left: -3px;
+	transition: top .3s;
+}
+
+.gold{
+	width: 100%;
+	height: 100%;
+	background: url(../img/gold-idle.png) bottom center no-repeat;
+	background-size: 120%;
+	position: absolute;
+	top: 140px;
+	left: 5px;
+	transition: top .3s;
+}
+
+.gold-damage{
+	width: 100%;
+	height: 100%;
+	background: url(../img/gold-damage.png) bottom center no-repeat;
+	background-size: 120%;
+	position: absolute;
+	top: 140px;
+	left: 5px;
+	transition: top .3s;
+}
+
+.cliff.appear .monster{
+	top: 20px;
+}
+
+.cliff.appear-wolf .wolf{
+	top: 20px;
+}
+
+.cliff.appear-gold .gold{
+	top: 20px;
+}
+
+.hidden{
+	display: none;
+}
+
+.footer{
+	background-color: #4F3219;
+}
+
+.footer a{
+	text-decoration: none;
+	color: white;
+}
+
+.footer a:hover{
+	color: #00b959;
+}
+
+@media (max-width: 768px) { 
+
+.title{
+	width: 400px;
+}
+
+.title h1{
+	font-size: 28px;
+}
+
+.btn{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: 70px;
+}
+
+.score{
+	font-size: 30px;
+}
+
+.time{
+	font-size: 20px;
+}
+
+.square{
+	width: 400px;
+	height: 405px;
+}
+
+.cliff{
+	width: 200px;
+	height: 135px;
+}
+
+.cliff:after{
+	width: 200px;
+	height: 100px;
+	background-size: 80%;
+}
+
+.monster{
+	background-size: 105%;
+	padding: 100px;
+}
+
+.wolf{
+	background-size: 110%;
+	padding: 100px;
+	left: 0;
+}
+
+.gold{
+	background-size: 105%;
+	padding: 100px;
+}
+
+.monster-damage{
+	background-size: 105%;
+	padding: 100px;
+}
+
+.wolf-damage{
+	background-size: 110%;
+	padding: 100px;
+	left: 0;
+}
+
+.gold-damage{
+	background-size: 105%;
+	padding: 100px;
+}
+
+.cliff.appear .monster{
+	top: -30px;
+}
+
+.cliff.appear-wolf .wolf{
+	top: -55px;
+}
+
+.cliff.appear-gold .gold{
+	top: -30px;
+}
+
+.footer p{
+	font-size: 14px;
+}
+
+ }

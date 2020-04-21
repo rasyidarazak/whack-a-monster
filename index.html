@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Whack a Monster!</title>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-white">
+
+	<div class="container mt-4">
+		<div class="row text-center title">
+			<div class="col-md-12">
+				<h1 class="alert alert-success rounded-pill">Whack a Monster!</h1>
+				<h2 class="time alert alert-danger">00 : 00</h2>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<button type="button" class="btn btn-danger btn-start" onclick="start()">Start</button>
+				<h2 class="score alert alert-warning rounded-circle hidden">0</h2>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-3">
+			<div class="col-md-12">
+				<div class="square shadow-lg">
+					<div class="cliff">
+						<div class="monster"></div>
+						<div class="wolf"></div>
+						<div class="gold"></div>
+					</div>
+					<div class="cliff">
+						<div class="monster"></div>
+						<div class="wolf"></div>
+						<div class="gold"></div>
+					</div>
+					<div class="cliff">
+						<div class="monster"></div>
+						<div class="wolf"></div>
+						<div class="gold"></div>
+					</div>
+					<div class="cliff">
+						<div class="monster"></div>
+						<div class="wolf"></div>
+						<div class="gold"></div>
+					</div>
+					<div class="cliff">
+						<div class="monster"></div>
+						<div class="wolf"></div>
+						<div class="gold"></div>
+					</div>
+					<div class="cliff">
+						<div class="monster"></div>
+						<div class="wolf"></div>
+						<div class="gold"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer text-white mt-4 shadow">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-md-12 text-center">
+            <p>Copyright 2020. Built by <strong><a href="https://www.instagram.com/rasyidarazak/?hl=id">Rasyid Arazak Saputra</a></strong>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	
+	<!-- My Audio -->
+	<audio src="audio/whack.mp3" id="punch"></audio>
+	<audio src="audio/monster.mp3" id="hit-monster"></audio>
+	<audio src="audio/wolf.mp3" id="hit-wolf"></audio>
+	<audio src="audio/gold.mp3" id="hit-gold"></audio>
+
+	<!-- JQuery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Sweet Alert -->
+	<script src="js/sweetalert2.all.min.js"></script>
+	<!-- My JS -->
+	<script src="js/script.js"></script>
+</body>
+</html>
