@@ -1,5 +1,7 @@
 body{
 	background-image: url(../img/bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #6C4929;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -154,7 +156,7 @@ body{
 }
 
 .footer{
-	background-color: #4F3219;
+	background-color: #6C4929;
 }
 
 .footer a{
